@@ -5,6 +5,18 @@ variable "region" {
   default = "us-east-1"
 }
 
+variable "ssh_key_public" {
+  type    = string
+  #Replace this with the location of you public key .pub
+  default = "C:\\Users\\sense\\.ssh\\id_rsa.pub"
+}
+
+variable "ssh_key_private" {
+  type    = string
+  #Replace this with the location of you private key
+  default = "C:\\Users\\sense\\.ssh\\id_rsa"
+}
+
 variable "subnet_ips" {}
 
 variable "security_group" {}
